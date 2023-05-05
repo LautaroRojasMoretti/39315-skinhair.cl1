@@ -1,0 +1,39 @@
+header {
+    background-color: #000000;
+    flex-flow: row wrap;
+    h1 {
+        color: #F0A500;
+        text-align: center;
+        font-family: 'Milonga', cursive;
+        font-size: 4.0rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        letter-spacing: 2.5rem;
+        a {
+            text-decoration: none;
+            color: #F0A500;
+        }
+    }
+    .navbar {
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+        font-family: 'Londrina Solid', cursive;
+        justify-content: center;
+        justify-content: space-evenly;
+        li{
+            a {
+                display: flex;
+                text-decoration: none;
+                color: #F0A500;
+                font-size: 2.5rem;
+                justify-content: center;
+            }
+        }
+        }
+}
+.index-sup {
+    color: #000000;
+    height: 10rem;
+}

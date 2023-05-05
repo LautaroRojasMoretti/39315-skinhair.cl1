@@ -1,0 +1,387 @@
+main {
+    background-image: url(../Assets/img/Background.jpg);
+    object-fit: cover;
+    width: 100%;
+    height: 100vh auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-flow: row wrap;
+}
+
+.index-main {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    .titulo-index {
+        display: grid;
+        grid-template: repeat (2, 1fr) / 1fr;
+        grid-template-areas:
+            "h1-grid"
+            " . "
+        ;
+
+        .h1-grid {
+            margin-top: 10rem;
+            grid-area: h1-grid;
+            font-size: 6.0rem;
+            color: #F0A500;
+            text-align: center;
+            font-family: 'Milonga', cursive;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            letter-spacing: 4.0rem;
+
+            a {
+                text-decoration: none;
+                color: #F0A500;
+            }
+        }
+    }
+
+    .navbar1 {
+        li {
+            display: flex;
+            list-style: none;
+            font-family: 'Londrina Solid', cursive;
+            justify-content: center;
+            text-decoration: none;
+
+            a {
+                display: flex;
+                text-decoration: none;
+                color: #F0A500;
+                font-size: 4rem;
+            }
+        }
+
+        .line {
+            position: relative;
+            top: 25%;
+            width: 16em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+            font-family: 'Londrina Solid', cursive;
+            font-size: 2.0rem;
+            color: #F0A500;
+            background-color: rgba(0, 0, 0, 0.329);
+        }
+    }
+
+
+    /*Animation*/
+    .anim-typewriter {
+        animation: typewriter 4s steps(23) 1s 1 normal both,
+            blinkTextCursor 500ms steps(23) infinite normal;
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 12em;
+        }
+    }
+
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+        }
+
+        to {
+            border-right-color: transparent;
+        }
+    }
+}
+
+
+.main-nosotros {
+    .redes-nosotros {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.502);
+
+        .item-nos {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            margin:2.0rem;
+
+            img {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            a {
+                font-family: 'Londrina Solid', cursive;
+                text-decoration: none;
+                color: #F0A500;
+                font-size: 4.0rem;
+                text-shadow: 0.5rem 0.5rem 0.5rem rgba(128, 128, 128, 0.455);
+            }
+        }
+    }
+}
+
+.container-grid {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: 0.5fr 1fr 1fr / repeat(3, 1fr);
+    grid-template-areas:
+        "item0 item0 item0"
+        "item1 item2 item3"
+        "item4 item5 item6"
+    ;
+    gap: 1.0rem;
+
+    .item0 {
+        grid-area: item0;
+        background-color: rgba(0, 0, 0, 0.376);
+
+        .navbar-tienda {
+            gap: 5rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+                font-family: 'Londrina Solid', cursive;
+                justify-content: center;
+
+                a {
+                    color: #F0A500;
+                    font-size: 2rem;
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+    }
+
+    .item1 {
+        grid-area: item1;
+        background-color: rgba(0, 0, 0, 0.376);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: #F0A500;
+        font-family: 'Londrina Solid', cursive;
+        ;
+        font-size: 2.0rem;
+        text-shadow: 0.2rem 0.2rem 0.2rem grey
+    }
+
+    .item2 {
+        grid-area: item2;
+        background-color: rgba(0, 0, 0, 0.376);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: #F0A500;
+        font-family: 'Londrina Solid', cursive;
+        ;
+        font-size: 2.0rem;
+        text-shadow: 0.2rem 0.2rem 0.2rem grey
+    }
+
+    .item3 {
+        grid-area: item3;
+        background-color: rgba(0, 0, 0, 0.376);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: #F0A500;
+        font-family: 'Londrina Solid', cursive;
+        ;
+        font-size: 2.0rem;
+        text-shadow: 0.2rem 0.2rem 0.2rem grey
+    }
+
+    .item4 {
+        grid-area: item4;
+        background-color: rgba(0, 0, 0, 0.376);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: #F0A500;
+        font-family: 'Londrina Solid', cursive;
+        ;
+        font-size: 2.0rem;
+        text-shadow: 0.2rem 0.2rem 0.2rem grey
+    }
+
+    .item5 {
+        grid-area: item5;
+        background-color: rgba(0, 0, 0, 0.376);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: #F0A500;
+        font-family: 'Londrina Solid', cursive;
+        ;
+        font-size: 2.0rem;
+        text-shadow: 0.2rem 0.2rem 0.2rem grey
+    }
+
+    .item6 {
+        grid-area: item6;
+        background-color: rgba(0, 0, 0, 0.376);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: #F0A500;
+        font-family: 'Londrina Solid', cursive;
+        ;
+        font-size: 2.0rem;
+        text-shadow: 0.2rem 0.2rem 0.2rem grey;
+    }
+
+    .card-img {
+        height: 20rem;
+    }
+
+    button {
+        a {
+            text-decoration: none;
+            color: #F0A500;
+        }
+    }
+}
+
+.main-datita {
+    display: flex;
+    flex-flow: column wrap;
+
+    .h2-datita {
+        display: flex;
+        flex-flow: row wrap;
+        color: #F0A500;
+        background-color: rgba(0, 0, 0, 0.502);
+        margin-top: 2.0rem;
+    }
+
+    .datita-info {
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.502);
+
+        img {
+            height: 20rem;
+            border-radius: 15%;
+            box-shadow: 0.5rem 0.5rem 0.5rem rgba(128, 128, 128, 0.431);
+        }
+
+        p {
+            color: #F0A500;
+            font-family: 'Londrina Solid', cursive;
+            font-size: 2rem;
+            font-weight: lighter;
+        }
+    }
+
+    .video-datita {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.502);
+        margin-top: 2.0rem;
+
+        iframe {
+            height: 50rem;
+            width: 75rem;
+        }
+
+        p {
+            color: #F0A500;
+            font-family: 'Londrina Solid', cursive;
+            font-size: 2rem;
+        }
+    }
+}
+
+.main-news {
+    height: 100vh auto;
+    width: 100%;
+
+    .promociones {
+        color: #F0A500;
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 75rem;
+                }
+            }
+        }
+    }
+
+    .Noticias {
+        h2 {
+            color: #F0A500;
+            font-family: 'Londrina Solid', cursive;
+        }
+    }
+
+    .news {
+        display: flex;
+        justify-content: center;
+
+        .cards {
+            display: flex;
+            flex-flow: column wrap;
+            background-color: rgba(0, 0, 0, 0.53);
+            justify-content: center;
+            align-items: center;
+            margin: 2.0rem;
+
+            .img-hombre-crema {
+                width: 35rem;
+                height: 25rem;
+            }
+
+            .img-mujer-pelo-color {
+                width: 40rem;
+                height: 30rem;
+                margin: 2.0rem;
+            }
+
+            .img-mujer-mascarilla {
+                width: 30rem;
+                height: 25rem;
+            }
+
+            h2 {
+                color: #F0A500;
+                font-family: 'Londrina Solid', cursive;
+            }
+
+            p {
+                color: #F0A500;
+                font-family: 'Londrina Solid', cursive;
+            }
+        }
+    }
+}

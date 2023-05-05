@@ -1,0 +1,25 @@
+footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+
+    .redes-sociales {
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+        color: #F0A500;
+
+        li {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .by {
+        text-align: start;
+        margin-right: 1.5rem;
+        h4{
+            color: #ffffffbc;
+        }
+    }
+}
